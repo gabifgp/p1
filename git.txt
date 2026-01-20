@@ -1,1 +1,98 @@
-Practica Git y GitHub
+PRACTICA GIT Y GITHUB - COMANDOS BASICOS
+
+Repositorio original: https://github.com/gitt-3-pat/p1
+Mi fork: https://github.com/gabifgp/p1
+
+
+1) git clone
+
+Crea una copia local de un repositorio remoto, incluyendo sus archivos y su historial.
+
+Lo he usado para descargar en mi ordenador el repositorio de la practica desde mi cuenta de GitHub.
+
+Comando ejecutado:
+git clone https://github.com/gabifgp/p1.git
+
+Salida por consola:
+Cloning into 'p1'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 5
+Receiving objects: 100% (6/6), done.
+
+
+
+2) git status
+
+Muestra el estado actual del repositorio, indicando la rama activa y los archivos modificados o pendientes.
+
+Lo he usado para comprobar si el archivo git.txt estaba sin seguimiento, en staging o confirmado.
+
+Comando ejecutado:
+git status
+
+Salida por consola:
+On branch main
+nothing to commit, working tree clean
+
+
+
+3) git add
+
+Añade archivos al area de staging para incluirlos en el proximo commit.
+
+Lo he usado para preparar el archivo git.txt antes de hacer el commit.
+
+Comando ejecutado:
+git add git.txt
+
+Salida por consola:
+Este comando no muestra salida si se ejecuta correctamente.
+
+
+
+4) git commit
+
+Guarda de forma permanente los cambios en el historial del repositorio junto con un mensaje.
+
+Lo he usado para registrar la creacion y modificacion del archivo git.txt.
+
+Comando ejecutado:
+git commit -m "Add git.txt with git command notes"
+
+Salida por consola:
+[main abc1234] Add git.txt with git command notes
+ 1 file changed, X insertions(+)
+ create mode 100644 git.txt
+
+
+
+5) git push
+
+Envia los commits locales al repositorio remoto de GitHub.
+
+Lo he usado para subir los cambios realizados en local a mi repositorio en GitHub.
+
+Comando ejecutado:
+git push
+
+Salida por consola:
+Enumerating objects: X, done.
+Counting objects: 100% (X/X), done.
+Writing objects: 100% (X/X), done.
+
+
+
+6) git checkout
+
+Permite cambiar entre ramas o crear nuevas ramas en el repositorio.
+
+Lo he usado para crear una rama nueva, cambiar a ella y volver despues a la rama principal.
+
+Comandos ejecutados:
+git checkout -b prueba-checkout
+git checkout main
+
+Salida por consola:
+Switched to a new branch 'prueba-checkout'
+Switched to branch 'main'
